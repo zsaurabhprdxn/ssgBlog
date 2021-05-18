@@ -1,0 +1,23 @@
+---
+layout: "base.njk"
+title: "Eleventy Blog - Home"
+pagination: 
+    data: posts
+    size: 10
+    alias: posts
+permalink: /{{ pagination.pageNumber + 1 }}/index.html
+---
+
+{% for post in posts %}
+    <article>
+        <h1>{{ post.title }}</h1>
+        <p>{{ post.body }}</p>
+    </article>
+{% endfor %}
+
+{% for i in range(1,10) %}
+    <div class="navigation">
+        <a href='/{{i}}' title='{{i}}'>{{i}}</a>
+    </div>
+
+{% endfor %}
