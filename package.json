@@ -1,0 +1,26 @@
+{
+  "name": "ssgBlog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "eleventy",
+    "start": "eleventy --serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zsaurabhprdxn/ssgBlog.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zsaurabhprdxn/ssgBlog/issues"
+  },
+  "homepage": "https://github.com/zsaurabhprdxn/ssgBlog#readme",
+  "dependencies": {
+    "@11ty/eleventy": "^0.12.1",
+    "axios": "^0.21.1",
+    "dotenv": "^9.0.2"
+  }
+}
