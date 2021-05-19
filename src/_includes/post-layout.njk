@@ -1,0 +1,9 @@
+---
+layout: "base.njk"
+---
+
+<article>
+    <h1>{{ title }}</h1>
+    <small>{{ date | date_UTC }}</small>
+    {{ content | safe }}
+</article>
